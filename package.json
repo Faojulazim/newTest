@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --host"
+    "dev": "vite --host",
+    "build:css": "npx tailwindcss -i ./style.css -o ./dist/style.css --minify"
   },
   "keywords": [],
   "author": "",
