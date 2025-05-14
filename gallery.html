@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/Logos/rounded-logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="output.css" rel="stylesheet" />
+
+    <title>Unsere Galerie</title>
+  </head>
+  <body class="bg-black scroll-smooth font-Overpass" data-body="">
+    <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
+      <nav
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-0 2xl:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-5 xl:px-10"
+        data-bgzinc400=""
+      >
+        <div
+          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+        >
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+          <div
+            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          >
+            <div>
+              <div
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full cursor-pointer"
+                id="toggleBtn"
+              >
+                <div
+                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all"
+                  id="toggleDiv"
+                  data-toggleDiv=""
+                >
+                  <i
+                    class="fa-solid fa-moon text-yellow-400 transition-all"
+                    id="moonsun"
+                    data-moonsun=""
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-white text-black px-1 rounded-md"
+            >
+              <option class="" value="Deutsch">Deutsch</option>
+              <option class="" value="English">English</option>
+            </select>
+            <i
+              class="fa-solid fa-bars text-white text-2xl cursor-pointer lg:hidden"
+              id="hamburger"
+              data-textblack=""
+            ></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="gallery.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
+              </li>
+            </a>
+
+            <a href="about.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
+              >
+                About Us
+              </li>
+            </a>
+
+            <a href="impressum.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-5 2xl:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+          >
+            <div
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full cursor-pointer"
+              id="toggleBtn"
+            >
+              <div
+                class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all"
+                id="toggleDiv"
+                data-toggleDiv=""
+              >
+                <i
+                  class="fa-solid fa-moon text-yellow-400 transition-all"
+                  id="moonsun"
+                  data-moonsun=""
+                ></i>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+            >
+              <option class="outline-none" value="Deutsch">Deutsch</option>
+              <option class="outline-none" value="English">English</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
+      >
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
+            <img
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+            />
+            <i
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] cursor-pointer lg:hidden"
+              id="close"
+              data-textblack=""
+            ></i>
+          </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="gallery.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
+              </li>
+            </a>
+
+            <a href="about.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
+              >
+                About Us
+              </li>
+            </a>
+
+            <a href="impressum.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="my-20 w-full flex flex-col items-center" id="gallery">
+        <div class="flex items-center justify-center relative">
+          <h1 class="text-4xl lg:text-5xl text-white" id="galleryHeading">
+            Gallery
+          </h1>
+        </div>
+        <div
+          class="w-full mt-10 500:mt-10 px-5 lg:mt-16 grid 500:grid-cols-[repeat(2,minmax(200px,1fr))] sm:grid-cols-[repeat(2,minmax(280px,1fr))] md:grid-cols-[repeat(3,minmax(200px,1fr))] xl:grid-cols-[repeat(4,minmax(200px,1fr))] 500:gap-x-5 gap-y-5 500:gap-y-7 425:max-w-[300px] 500:max-w-none sm:max-w-none 2xl:gap-10 2xl:max-w-[1600px]"
+          id="bgblackgallery"
+        >
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/1.jpg"
+            alt=""
+          />
+          <!-- <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/resized-images/2.jpg"
+          alt=""
+        /> -->
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/3.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/4.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/5.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/6.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/7.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/8.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/9.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/10.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/11.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/12.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/13.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/13.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/14.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/15.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/16.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/17.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/18.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/19.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/20.jpg"
+            alt=""
+          />
+          <!-- <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/new-resized/21.jpg"
+          alt=""
+        />
+        <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/new-resized/22.jpg"
+          alt=""
+        /> -->
+          <!-- <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/new-resized/23.jpg"
+          alt=""
+        />
+        <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/new-resized/24.jpg"
+          alt=""
+        />
+        <img
+          class="rounded-[3px] hover:scale-110 transition-all"
+          src="assets/new-resized/25.jpg"
+          alt=""
+        /> -->
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/26.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/27.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/28.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/29.jpg"
+            alt=""
+          />
+          <img
+            class="rounded-[3px] hover:scale-110 transition-all"
+            src="assets/new-resized/30.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Footer Section -->
+    </main>
+    <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div
+          class="font-Overpass flex flex-col items-start md:gap-x-5 2xl:gap-x-10"
+        >
+          <div class="">
+            <a href="">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a href="mailto:info@epc-tech.de" class="flex items-start gap-x-2"
+                ><i class="fa-solid mt-1 fa-envelope text-[16px]"></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3"
+                ><i class="fa-solid fa-phone mt-1 text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
+            </div>
+          </div>
+          <div class="mt-5">
+            <h1 class="font-[500] text-xl tracking-wide">Links</h1>
+
+            <ul class="flex flex-col md:flex-row gap-y-2 gap-x-10 mt-2">
+              <a href="index.html#home" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-home=""
+                >
+                  Home
+                </li>
+              </a>
+              <a href="service.html#home" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-service=""
+                >
+                  Services
+                </li>
+              </a>
+              <a href="gallery.html#home" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-gallery=""
+                >
+                  Gallery
+                </li>
+              </a>
+              <a href="about.html#home" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-aboutus=""
+                  =""
+                >
+                  About Us
+                </li>
+              </a>
+              <a href="announcement.html" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-accounce=""
+                >
+                  Announcements
+                </li>
+              </a>
+
+              <a href="impressum.html#home" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-legal=""
+                >
+                  Legal Notices
+                </li>
+              </a>
+              <a href="datenschutz.html" class="py-2">
+                <li
+                  class="text-md w-fit cursor-pointer hover:scale-110"
+                  data-allListItems=""
+                  data-daten=""
+                >
+                  Datenschutz
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full h-[2px] bg-white mt-5 sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <a href="https://wa.me/17641742121" target="_blank">
+                  <i
+                    class="fa-brands fa-whatsapp text-2xl hover:text-Secondary cursor-pointer"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="https://x.com/EPC_Tech" target="_blank">
+                  <i
+                    class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="https://discord.gg/6KYyfrcw9r" target="_blank">
+                  <i
+                    class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href="https://www.instagram.com/epc.tech/" target="_blank"
+                  ><i
+                    class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <!-- <a href="" target="_blank"> -->
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+                <!-- </a> -->
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
+            <span>&#169;</span>
+            <span id="copyright">Copyright 2025 EPC-Tech</span>
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <script src="toggleOthers.js"></script>
+
+    <script src="changeLanguage.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      const toggler = document.querySelectorAll("[data-languageSelection]");
+      toggler.forEach((items) => {
+        if (items.value == "Deutsch") {
+          document.querySelector("#galleryHeading").innerText =
+            "Unsere Galerie";
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Startseite";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Galerie";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Unsere Leistungen";
+          });
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Aktuelles";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "Über uns";
+          });
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Impressum";
+          });
+          document.querySelector("[data-daten]").innerText = "Datenschutz";
+          document.querySelector("#copyright").innerText =
+            "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+        } else {
+          document.querySelector("#galleryHeading").innerText =
+            "Our Gallery Showroom";
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Home";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Gallery";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Services";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "About Us";
+          });
+
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Announcements";
+          });
+
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Legal Notice";
+          });
+          document.querySelector("[data-daten]").innerText = "Privacy Policy";
+          document.querySelector("#copyright").innerText =
+            "Copyright 2025 EPC-Tech";
+        }
+        items.addEventListener("change", (e) => {
+          if (items.value == "Deutsch") {
+            document.querySelector("#galleryHeading").innerText =
+              "Unsere Galerie";
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Startseite";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Galerie";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Unsere Leistungen";
+            });
+            document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+              items.innerText = "Aktuelles";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "Über uns";
+            });
+            document.querySelectorAll("[data-legal]").forEach((items, i) => {
+              items.innerText = "Impressum";
+            });
+            document.querySelector("[data-daten]").innerText = "Datenschutz";
+            document.querySelector("#copyright").innerText =
+              "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+          } else {
+            document.querySelector("#galleryHeading").innerText =
+              "Our Gallery Showroom";
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Home";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Gallery";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Services";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "About Us";
+            });
+
+            document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+              items.innerText = "Announcements";
+            });
+
+            document.querySelectorAll("[data-legal]").forEach((items, i) => {
+              items.innerText = "Legal Notice";
+            });
+            document.querySelector("[data-daten]").innerText = "Privacy Policy";
+            document.querySelector("#copyright").innerText =
+              "Copyright 2025 EPC-Tech";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

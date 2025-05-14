@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --font-Overpass: "overpass", sans-serif;
+  --Text: #ffffff;
+  --color-white: #ffffff;
+  --breakpoint-500: 640px;
+  --breakpoint-375: 375px;
+  --breakpoint-425: 425px;
+  --Background: #020109;
+  --Primary: #1ccef2;
+  --Secondary: #1347f1;
+  --Accent: #ce0d5e;
+  --newAccent: #f13757;
+  --color-Text: #ffffff;
+  --color-Background: #020109;
+  --color-Primary: #1ccef2;
+  --color-Secondary: #1347f1;
+  --color-Accent: #ce0d5e;
+  --color-newAccent: #f13757;
+}
